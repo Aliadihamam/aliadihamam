@@ -1,0 +1,255 @@
+ /* Raset */
+ *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ }
+ body {
+     font-family: Arial, sans-serif;
+ }
+ header {
+    background-color: rgb(189, 148, 154);
+    padding: 20px;
+ }
+ .logo {
+    width: 100px;
+    height: auto;
+    margin-left: 20px;
+ }
+ 
+ nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+ }
+ nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+ }
+nav ul li {
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    background-color: rgb(197, 11, 42);
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.btn-order {
+    color: white;
+    background-color: rgb(197, 11, 42);
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+
+/* Hero Section */
+#hero {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+    padding: 5px;
+    background-color: rgb(223, 141, 141);
+}
+
+
+.hero-image {
+    width: 300px;
+    max-width: 600px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.hero-content {
+    max-width: 600px;
+}
+
+.hero-content h1 {
+    font-size: 2,5rem;
+}
+
+.btn-primary {
+    background-color: red;
+    color: white;
+    display: inline-flex;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+} 
+
+.btn-primary{
+    background-color: red;
+    color: white;
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+/* Products Section */
+#product h2 {
+    padding: 40px 0 0 40px;
+    background-color:  rgb(201, 164, 171);
+    font-size: 30px;
+    text-align: center;
+}
+
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 40px 0;
+    background-color: rgb(223, 141, 141);
+}
+.products {
+    text-align: center;
+    max-width: 300px;
+    margin: 10px;
+}
+.products img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+ 
+/* Testimonials Section */
+#testimonials {
+    background-color: rgb(223, 141, 141);
+    padding: 40px;
+    text-align: center;
+}
+.testimonials {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.testimonial {
+    margin: 20px;
+    max-width: 300px;
+}
+.testimonial img {
+    width: 100px;
+    height: auto;
+    border-radius: 50%;
+}
+
+/* Contact Section */
+#contact {
+    padding: 40px;
+    text-align: center;
+    background-color: black;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    max-width: 700px;
+    display: block;
+    margin: 0 auto;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #460707;
+}
+.text {
+    text-align: center;
+}
+ 
+button {
+    padding: 10px 20px;
+    margin-left: 450px;
+    background-color: rgb(194, 69, 146);
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+/* footer */
+footer {
+    background-color:rgb(189, 148, 154);
+    color: blue;
+    text-align: center;
+    padding: 20px;
+}
+
+footer p {
+    margin: 10px 0;
+}
+.social-icons {
+    margin-bottom: 10px;
+
+}
+
+.social-icons a img {
+    width: 30px;
+    margin: 0 10px;
+}
+
+/* Media Queries For Responsiveness */
+@media (max-width:768px) {
+    nav ul {
+        display: none;
+    }
+
+    nav {
+        flex-direction: column;
+    }
+    .btn-order {
+        margin-top: 10px;
+    }
+
+    #hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+
+
+     .hero-content {
+    font-size: 2,5rem;
+    }
+     .btn-primary {
+    margin-bottom: 10px;
+    }
+
+    #product h2 {
+    text-align: center;
+    } 
+    .products-list {
+    flex-direction: column;
+    text-align: center;
+    }
+
+    .testimonials {
+    flex-direction: column;
+    }    
+
+    .testimonial {
+    margin: auto;
+    }
+
+     form input,
+     form textarea {
+     width: 90%;
+    }
+}    
+
+@media (max-width: 480px){
+    .hero-content h1 {
+         font-size: 1.8rem;
+    }
+}
+.product {
+    width: 100%;
+    margin: 10px 0;
+}
+.testimonial {
+    width: 100%;
+}
+
