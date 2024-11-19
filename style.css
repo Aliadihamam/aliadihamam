@@ -196,6 +196,9 @@ footer p {
     nav ul {
         display: none;
     }
+    .logo {
+        margin: auto;
+    }
 
     nav {
         flex-direction: column;
@@ -237,6 +240,9 @@ footer p {
      form input,
      form textarea {
      width: 90%;
+    }
+    button {
+     margin: auto;
     }
 }    
 
